@@ -1,6 +1,8 @@
 package structuralPatterns.composite.example.shapes;
 
-import java.awt.*;
+
+import java.awt.Graphics;
+import java.awt.Color;
 
 public class Dot extends BaseShape{
     private final int DOT_SIZE = 3;

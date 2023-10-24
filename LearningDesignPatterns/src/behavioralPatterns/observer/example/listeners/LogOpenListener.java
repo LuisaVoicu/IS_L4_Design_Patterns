@@ -10,7 +10,7 @@ public class LogOpenListener implements EventListener{
     }
     @Override
     public void update(String eventType, File file) {
-        System.out.println("Save log to " + this.log + " : someone has performed : " +
+        System.out.println("\nSave log to " + this.log + " : someone has performed : " +
                 eventType + " operation with following file: " + file.getName());
     }
 }

@@ -8,24 +8,23 @@ import java.util.List;
 public class CompoundShape extends BaseShape{
     protected List<Shape> children = new ArrayList<>();
 
-    public CompoundShape(List<Shape> components){
+    public CompoundShape(Shape... components){
         super(0,0, Color.black);
-        this.addAll(components);
+        add(components);
     }
 
-    public void add(Shape component){
-        children.add(component);
-    }
+//    public void add(Shape component){
+//        children.add(component);
+//    }
 
-    public void addAll(List<Shape> components){
-        children.addAll(components);
+    public void add(Shape... components){
+        children.addAll(Arrays.asList(components));
     }
 
     public void remove(Shape child){
         children.remove(child);
     }
 
-    // todo : i don't know what Shape... components means
     public void remove(Shape... component){
         children.removeAll(Arrays.asList(component));
     }

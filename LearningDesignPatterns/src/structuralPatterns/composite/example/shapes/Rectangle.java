@@ -1,6 +1,7 @@
 package structuralPatterns.composite.example.shapes;
 
-import java.awt.*;
+import java.awt.Graphics;
+import java.awt.Color;
 
 public class Rectangle extends BaseShape{
     public int width;

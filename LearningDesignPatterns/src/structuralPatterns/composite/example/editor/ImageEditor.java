@@ -1,25 +1,30 @@
 package structuralPatterns.composite.example.editor;
 import structuralPatterns.composite.example.shapes.CompoundShape;
+import structuralPatterns.composite.example.shapes.Shape;
 
 import javax.swing.*;
-import java.awt.*;
+import java.awt.Canvas;
+import java.awt.Graphics;
+import java.awt.Color;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
-import java.util.ArrayList;
+
+import static com.sun.java.accessibility.util.AWTEventMonitor.addMouseListener;
 
 public class ImageEditor {
     private EditorCanvas canvas;
-    private CompoundShape allShapes; //= new CompoundShape();
+    private CompoundShape allShapes = new CompoundShape();
 
     public ImageEditor(){
         canvas = new EditorCanvas();
     }
 
-    public void loadShapes(Shape... components){
+    public void loadShapes(Shape... shapes) {
         allShapes.clear();
-        //allShapes.addAll(components);
+        allShapes.add(shapes);
         canvas.refresh();
     }
+
 
     private class EditorCanvas extends Canvas {
         JFrame frame;

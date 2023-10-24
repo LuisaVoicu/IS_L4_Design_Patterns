@@ -7,7 +7,6 @@ import behavioralPatterns.observer.example.listeners.LogOpenListener;
 public class Demo {
     public static void main(String[] args) {
         Editor editor = new Editor();
-        //todo nu imi salveaza/creeaza fisierul unde trebuie
 
         editor.events.subscribe("open", new LogOpenListener("D:\\an3sem1\\IS\\lab3\\IS_L4_Design_Patterns\\LearningDesignPatterns\\src\\behavioralPatterns\\observer\\example\\file.txt"));
         editor.events.subscribe("save", new EmailNotificationListener("luisa@example.com"));

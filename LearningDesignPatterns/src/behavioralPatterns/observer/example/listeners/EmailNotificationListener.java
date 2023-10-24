@@ -11,7 +11,7 @@ public class EmailNotificationListener implements EventListener {
 
     @Override
     public void update(String eventType, File file) {
-        System.out.println("Email to " + this.email + " : someone has performed : " +
+        System.out.println("\nEmail to " + this.email + " : someone has performed : " +
                             eventType + " operation with following file: " + file.getName());
     }
 }

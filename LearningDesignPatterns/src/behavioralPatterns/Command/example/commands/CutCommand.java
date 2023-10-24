@@ -9,6 +9,9 @@ public class CutCommand extends Command{
 
     @Override
     public boolean execute() {
+        if(super.getEditor().textField.getSelectedText() == null){
+            return false;
+        }
         if(super.getEditor().textField.getSelectedText().isEmpty()){
             return false;
         }
