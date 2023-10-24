@@ -1,7 +1,7 @@
 ## Decorator
 ### About Decorator pattern
 * structural design pattern
-* allows you to attack new behaviors to objects by placing them intro wrappers
+* allows you to attach new behaviors to objects by placing them into wrappers
 
 ### Structure
 * Component: declares the common interface for both wrappers and wrapped objects
