@@ -1,7 +1,7 @@
 # (Some) Design Patterns in a Nutshell
 ### Remarks
 * All resources are taken from [Refactoring Guru](https://refactoring.guru/).
-* Here are briefly presented some design patterns. Click on the name for each pattern for more details :D 
+* Here are briefly presented some design patterns. You can click on the name of each Design Pattern for more details :D
 
 ## Creational Patterns
 ### [Abstract Factory](LearningDesignPatterns/src/CreationalPatterns/AbstractFactory/Description.md)
