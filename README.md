@@ -85,7 +85,7 @@
 
 ### [Decorator](LearningDesignPatterns/src/structuralPatterns/decorator/Description.md)
 * When?
- - when you want to attack new behaviors to objects by placing them into wrappers
+ - when you want to attach new behaviors to objects by placing them into wrappers
 * Elements :
  - Component -> common interface for wrappers
  - Concrete Component -> class with wrapped objects
